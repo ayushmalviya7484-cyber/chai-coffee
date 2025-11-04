@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bean Scene Coffee</title>
+  <link rel="stylesheet" href="coffee.css">
+</head>
+<body>
+
+  
+  <div class="hero-section">
+    <img src="assets/coffee_image.png" alt="Coffee" class="coffee-image">
+
+  
+    <nav class="coffee-website">
+      <div class="logo">Bean Scene</div>
+      <ul>
+        <li>Home</li>
+        <li>Menu</li>
+        <li>About Us</li>
+        <li>Contact Us</li>
+      </ul>
+      <div>
+        <button class="btn nav-btn" id="signin-btn">Sign In</button>
+        <button class="btn nav-btn" id="signup-btn">Sign Up</button>
+      </div>
+    </nav>
+
+    
+    <div class="text-overlay">
+      <div class="tagline">We've got your morning covered with</div>
+      <h1 class="main-heading">Coffee</h1>
+      <p class="description">
+        It is best to start your day with a cup of coffee. Discover the best flavours of coffee you will ever have. We provide the best for our customers.
+      </p>
+      <button class="explore-btn order-btn">Order Now</button>
+    </div>
+  </div>
+
+
+  <section id="menu">
+    <div class="container">
+      <h1>Enjoy a new blend of coffee style</h1>
+      <p class="subtitle">Explore all flavours of coffee with us. There is always a new cup worth experiencing</p>
+      <div class="menu">
+        <div class="card">
+          <img src="assets/Rectangle 7.png" alt="Cappuccino">
+          <h3>Cappuccino</h3>
+          <p>Coffee 50% | Milk 50%</p>
+          <p class="price">$8.50</p>
+          <button class="btn order-btn">Order Now</button>
+        </div>
+        <div class="card">
+          <img src="assets/Rectangle 9.png" alt="Chai Latte">
+          <h3>Chai Latte</h3>
+          <p>Coffee 50% | Milk 50%</p>
+          <p class="price">$8.50</p>
+          <button class="btn order-btn">Order Now</button>
+        </div>
+        <div class="card">
+          <img src="assets/Rectangle 11.png" alt="Macchiato">
+          <h3>Macchiato</h3>
+          <p>Coffee 50% | Milk 50%</p>
+          <p class="price">$8.50</p>
+          <button class="btn order-btn">Order Now</button>
+        </div>
+        <div class="card">
+          <img src="assets/Rectangle 13.png" alt="Espresso">
+          <h3>Espresso</h3>
+          <p>Coffee 50% | Milk 50%</p>
+          <p class="price">$8.50</p>
+          <button class="btn order-btn">Order Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <div class="container">
+    <h2>Why are we different?</h2>
+    <p class="subtitle">We don’t just make your coffee, we make your day!</p>
+    <div class="features">
+      <div class="feature-box">
+        <img src="assets/coffee-beans 1.png" alt="Supreme Beans">
+        <h3>Supreme Beans</h3>
+        <p>Beans that provide great taste</p>
+      </div>
+      <div class="feature-box">
+        <img src="assets/badge 1.png" alt="High Quality">
+        <h3>High Quality</h3>
+        <p>We provide the highest quality</p>
+      </div>
+      <div class="feature-box">
+        <img src="assets/coffee-cup 1.png" alt="Extraordinary">
+        <h3>Extraordinary</h3>
+        <p>Coffee like you have never tasted</p>
+      </div>
+      <div class="feature-box">
+        <img src="assets/best-price 1.png" alt="Affordable Price">
+        <h3>Affordable Price</h3>
+        <p>Our Coffee prices are easy on wallet</p>
+      </div>
+    </div>
+    <p class="cta-text">Great ideas start with great coffee. Let’s help you achieve that.</p>
+    <a href="#menu"  class="cta-btn order-btn">Join Us</a>
+  </div>
+
+  <div class="coffee-container">
+    <img src="assets/Rectangle 14.png" class="last-img">
+  </div>
+
+  
+  <script>
+    const orderButtons = document.querySelectorAll('.order-btn');
+    orderButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        alert("Redirecting you to the order page!");
+        window.open("order.html", "_blank");
+      });
+    });
+
+    document.getElementById('signin-btn').addEventListener('click', () => {
+      alert("Redirecting to Sign In page!");
+      window.open("signin.html", "_blank");
+    });
+
+    document.getElementById('signup-btn').addEventListener('click', () => {
+      alert("Redirecting to Sign Up page!");
+      window.open("signup.html", "_blank");
+    });
+  </script>
+</body>
+</html>
